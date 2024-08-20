@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from star-cat-generator.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 10:39:02 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STAR CAT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="../cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="star%20catv2%20(1).png" alt="Michi" />
+        <h1>Meme Generator</h1>
+        <p>STAR CAT</p>
+      </div>
+
+      <div class="content">
+        <div class="image-container">
+          <div class="main-image">
+            <img
+              id="bg"
+              class="bg-image"
+              src="Empty.png"
+              alt="Background Picture"
+            />
+            <img
+              id="mainImage"
+              src="./snapedit_1724154689163.png"
+              alt="Main Picture"
+            />
+            <img
+              id="bod"
+              class="body-image"
+              src="Empty.png"
+              alt="Body Picture"
+            />
+            <img id="hat" class="hat-image" src="Empty.png" alt="Hat Picture" />
+            <img
+              id="face"
+              class="face-image"
+              src="Empty.png"
+              alt="Face Picture"
+            />
+            <img id="eye" class="eye-image" src="Empty.png" alt="Eye Picture" />
+            <img
+              id="special"
+              class="special-image"
+              src="Empty.png"
+              alt="Special Picture"
+            />
+          </div>
+          <div class="buttons">
+            <button onclick="reset()" class="button">RESET CAT</button>
+            <button onclick="generateRandom()" class="button">
+              GENERATE RANDOM
+            </button>
+            <button onclick="downloadImage()" class="button">DOWNLOAD</button>
+          </div>
+        </div>
+
+        <div class="options-container">
+          <h2>BACKGROUND</h2>
+          <!-- CAT accessories -->
+          <div class="accessory-section professional">
+            <button class="scroll-button scroll-left-cat">&lt;</button>
+            <div class="accessory-list cat">
+              <div class="option-items">
+                <div class="option-item">
+                  <img
+                    src="Forbidden%20button.png"
+                    alt="Cat 1"
+                    onclick="changeBackgroundEmpty()"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bgs/Bg1.png"
+                    alt="Cat 1"
+                    onclick="changeBackground(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bgs/Bg2.png"
+                    alt="Cat 1"
+                    onclick="changeBackground(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bgs/Bg3.png"
+                    alt="Cat 1"
+                    onclick="changeBackground(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bgs/Bg4.png"
+                    alt="Cat 1"
+                    onclick="changeBackground(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bgs/Bg5.png"
+                    alt="Cat 2"
+                    onclick="changeBackground(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="scroll-button scroll-right-cat">&gt;</button>
+          </div>
+          <h2>HATS</h2>
+          <!-- HAT accessories -->
+          <div class="accessory-section professional">
+            <button class="scroll-button scroll-left-hat">&lt;</button>
+            <div class="accessory-list hat">
+              <div class="option-items">
+                <div class="option-item">
+                  <img
+                    src="Forbidden%20button.png"
+                    alt="Hat 1"
+                    onclick="chanageHatEmpty()"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/1.png"
+                    alt="Hat 1"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/2.png"
+                    alt="Hat 2"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/3.png"
+                    alt="Hat 3"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/4.png"
+                    alt="Hat 4"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/5.png"
+                    alt="Hat 5"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/6.png"
+                    alt="Hat 5"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/7%20(2).png"
+                    alt="Hat 5"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/8%20(2).png"
+                    alt="Hat 5"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/9.png"
+                    alt="Hat 5"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/hats/10.png"
+                    alt="Hat 5"
+                    onclick="chanageHat(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="scroll-button scroll-right-hat">&gt;</button>
+          </div>
+          <h2>FACE</h2>
+          <!-- FACE accessories -->
+          <div class="accessory-section professional">
+            <button class="scroll-button scroll-left-face">&lt;</button>
+            <div class="accessory-list face">
+              <div class="option-items">
+                <div class="option-item">
+                  <img
+                    src="Forbidden%20button.png"
+                    alt="Face 1"
+                    onclick="chanageFaceEmpty()"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/faces/7.png"
+                    alt="Face 1"
+                    onclick="chanageFace(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/faces/8.png"
+                    alt="Face 2"
+                    onclick="chanageFace(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="scroll-button scroll-right-face">&gt;</button>
+          </div>
+
+          <h2>EYES</h2>
+          <!-- FACE accessories -->
+          <div class="accessory-section professional">
+            <button class="scroll-button scroll-left-face">&lt;</button>
+            <div class="accessory-list face">
+              <div class="option-items">
+                <div class="option-item">
+                  <img
+                    src="Forbidden%20button.png"
+                    alt="Face 1"
+                    onclick="chanageEyeEmpty()"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/eyes/1%20(2).png"
+                    alt="Face 1"
+                    onclick="chanageEye(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/eyes/2%20(2).png"
+                    alt="Face 2"
+                    onclick="chanageEye(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/eyes/3%20(2).png"
+                    alt="Face 3"
+                    onclick="chanageEye(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/eyes/4%20(1).png"
+                    alt="Face 4"
+                    onclick="chanageEye(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/eyes/5%20(1).png"
+                    alt="Face 5"
+                    onclick="chanageEye(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/eyes/6%20(1).png"
+                    alt="Face 5"
+                    onclick="chanageEye(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="scroll-button scroll-right-face">&gt;</button>
+          </div>
+
+          <h2>BODIES</h2>
+          <!-- FACE accessories -->
+          <div class="accessory-section professional">
+            <button class="scroll-button scroll-left-face">&lt;</button>
+            <div class="accessory-list face">
+              <div class="option-items">
+                <div class="option-item">
+                  <img
+                    src="Forbidden%20button.png"
+                    alt="Face 1"
+                    onclick="changeBodyEmpty()"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bodies/1%20(3).png"
+                    alt="Face 1"
+                    onclick="changeBody(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bodies/2%20(3).png"
+                    alt="Face 2"
+                    onclick="changeBody(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bodies/3%20(3).png"
+                    alt="Face 3"
+                    onclick="changeBody(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bodies/4%20(3).png"
+                    alt="Face 3"
+                    onclick="changeBody(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bodies/5%20(3).png"
+                    alt="Face 3"
+                    onclick="changeBody(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/bodies/6%20(3).png"
+                    alt="Face 3"
+                    onclick="changeBody(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="scroll-button scroll-right-face">&gt;</button>
+          </div>
+
+          <h2>SPECIAL ACCESSORIES</h2>
+          <!-- FACE accessories -->
+          <div class="accessory-section professional">
+            <button class="scroll-button scroll-left-face">&lt;</button>
+            <div class="accessory-list face">
+              <div class="option-items">
+                <div class="option-item">
+                  <img
+                    src="Forbidden%20button.png"
+                    alt="Face 1"
+                    onclick="chanageSpecialEmpty()"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/1%20(4).png"
+                    alt="Face 1"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/2%20(4).png"
+                    alt="Face 2"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/3%20(4).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/4%20(2).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/5%20(2).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/6%20(2).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/7%20(1).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/8%20(1).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/9%20(1).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/10%20(1).png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/11.png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/12.png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/13.png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+                <div class="option-item">
+                  <img
+                    src="accessories/special/14.png"
+                    alt="Face 3"
+                    onclick="chanageSpecial(this.src)"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="scroll-button scroll-right-face">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function downloadImage() {
+        const container = document.querySelector(".main-image");
+        html2canvas(container, { useCORS: true, allowTaint: false })
+          .then((canvas) => {
+            // Get the data URL of the canvas
+            const image = canvas.toDataURL("image/png");
+
+            const link = document.createElement("a");
+            link.href = image;
+            link.download = "test.html";
+
+            // Append the link to the body
+            document.body.appendChild(link);
+
+            // Simulate a click on the link to download the image
+            link.click();
+
+            // Remove the link from the body
+            document.body.removeChild(link);
+          })
+          .catch((err) => {
+            console.error("Error capturing the image:", err);
+          });
+      }
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+
+  <!-- Mirrored from star-cat-generator.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2024 10:39:23 GMT -->
+</html>
